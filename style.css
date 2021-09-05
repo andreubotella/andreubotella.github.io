@@ -6,7 +6,7 @@ body {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 70vw 1fr;
+  grid-template-columns: 1fr minmax(min-content, 50vw) 1fr;
   grid-template-rows: 1fr auto;
   grid-template-areas: " . main ." ". . socials";
   place-items: center;
@@ -18,7 +18,7 @@ body {
 
 main {
   grid-area: main;
-  max-width: 50vw;
+  max-width: 650px;
   background: radial-gradient(closest-side, #bddadfb3, #bddadf59, #bddadf00);
 }
 
@@ -64,23 +64,23 @@ main,
 }
 #socials #social-twitter {
   content: url("./twitter-social.png");
-  content: url("./twitter-social.png") / "Twitter";
+  content: url("./twitter-social.png") / "Twitter:";
 }
 #socials #social-github {
   content: url("./github-social.png");
-  content: url("./github-social.png") / "GitHub";
+  content: url("./github-social.png") / "GitHub:";
 }
 #socials #social-linkedin {
   content: url("./linkedin-social.png");
-  content: url("./linkedin-social.png") / "LinkedIn";
+  content: url("./linkedin-social.png") / "LinkedIn:";
 }
 #socials #social-matrix {
   content: url("./matrix-social.png");
-  content: url("./matrix-social.png") / "Matrix";
+  content: url("./matrix-social.png") / "Matrix:";
 }
 #socials #social-email {
   content: url("./email-social.png");
-  content: url("./email-social.png") / "Email";
+  content: url("./email-social.png") / "Email:";
 }
 #socials dd {
   font-size: var(--handle-font-size);
