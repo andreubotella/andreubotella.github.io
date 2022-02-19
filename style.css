@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 50vw) 1fr;
   grid-template-rows: 1fr auto;
-  grid-template-areas: " . main ." ". . socials";
+  grid-template-areas: " . main socials";
   place-items: center;
   height: 100vh;
   width: 100vw;
@@ -29,7 +29,8 @@ main,
 
 #socials {
   grid-area: socials;
-  place-self: stretch;
+  align-self: end;
+  justify-self: stretch;
   background: radial-gradient(farthest-side at bottom right, #fff, 80%, #fff0);
 }
 
@@ -107,6 +108,7 @@ main,
   #socials {
     background: radial-gradient(circle closest-corner at bottom center, #fff, #fff0);
     margin: 0;
+    place-self: stretch;
   }
 }
 
