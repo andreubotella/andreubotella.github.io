@@ -86,6 +86,9 @@ main,
   font-size: var(--handle-font-size);
   margin: 0 var(--logo-margin);
 }
+#socials dd a {
+  display: block;
+}
 
 @media (max-width: 1000px) {
   body {
