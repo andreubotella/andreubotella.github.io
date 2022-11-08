@@ -82,9 +82,11 @@ main,
 #socials #social-email {
   content: url("./email-social.png");
   content: url("./email-social.png") / "Email:";
-}
-#socials :is(#social-email, #social-privkey) {
   grid-row-end: span 2;
+}
+#socials #social-privkey {
+  content: url("./privkey-social.png");
+  content: url("./privkey-social.png") / "Private key:";
 }
 #socials dd {
   font-size: var(--handle-font-size);
