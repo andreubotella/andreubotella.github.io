@@ -30,7 +30,7 @@ main,
 #socials {
   grid-area: socials;
   align-self: end;
-  justify-self: stretch;
+  justify-self: end;
   background: radial-gradient(farthest-side at bottom right, #fff, 80%, #fff0);
 }
 
@@ -83,12 +83,13 @@ main,
   content: url("./email-social.png");
   content: url("./email-social.png") / "Email:";
 }
+#socials :is(#social-email, #social-privkey) {
+  grid-row-end: span 2;
+}
 #socials dd {
   font-size: var(--handle-font-size);
   margin: 0 var(--logo-margin);
-}
-#socials dd a {
-  display: block;
+  grid-column-start: 2;
 }
 
 @media (max-width: 1000px) {
