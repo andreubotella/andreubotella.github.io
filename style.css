@@ -89,9 +89,9 @@ main,
   content: url("./email-social.png") / "Email:";
   grid-row-end: span 2;
 }
-#socials #social-privkey {
-  content: url("./privkey-social.png");
-  content: url("./privkey-social.png") / "Private key:";
+#socials #social-pubkey {
+  content: url("./pubkey-social.png");
+  content: url("./pubkey-social.png") / "Public key:";
 }
 #socials dd {
   font-size: var(--handle-font-size);
